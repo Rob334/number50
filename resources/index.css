@@ -1,0 +1,441 @@
+*{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.vidbox{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top:0;
+    left:0;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.vid{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    /* opacity: 0.2; */
+    z-index: 3;
+}
+
+.vidbox2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.vid2{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    /* opacity: 0.2; */
+    z-index: 1;
+}
+
+.pub{
+    color: rgb(205, 171, 100);
+}
+
+.chalet{
+    color: black;
+}
+
+.sol{
+    color: white;
+    font-family: "Sawarabi Mincho";
+}
+
+header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    height: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    position: relative;
+    bottom: 3px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navitem{
+    width: 240px;
+    height: 35px;
+    overflow: hidden;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    transition: flex-grow 1s ease-out 50ms;
+    border: 3px solid white;
+}
+
+.navitem:hover{
+    flex-grow: 10;
+}
+
+/* .overlaynav{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    color: darkgreen;
+    opacity: 0.4;
+    z-index: 4;
+} */
+
+.navpub{
+    background-image: url(./Images/leaves\ 2.png);
+    font-family: "Alex Brush";
+}
+
+.navchalet{
+    /* margin: 0 5px; */
+    background-image: url(./Images/Snow\ background.png);
+}
+
+.navsol{
+}
+
+.intro{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.introtxt{
+    padding: 30px 80px;
+}
+
+.venue{
+    position: relative;
+    top: 80px;
+    /* display: flex; */
+    justify-content: center;
+    overflow: hidden;
+    transition: min-height 2s ease-out 200ms;
+    min-height: 30rem;
+    /* max-height: 25%; */
+    transition: max-height 1s ease-out 200ms;
+}
+
+/* .venue:hover{
+    max-height: 500rem;
+} */
+
+h3{
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+    text-align: center;
+    height: 5rem;
+    z-index: 2;
+    position: relative;
+}
+
+h4{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.pub h5{
+    position: relative;
+    bottom: 1.5rem;
+    font-family: "Kalam";
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.pubmain{
+    background-color:rgb(20, 55, 11);
+}
+
+.chaletmain{
+    background-image: url(./Images/Follie.jpg);
+    background-size: 100%;
+}
+
+.solmain{
+    height: 70rem;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.pubtitle{
+    font-family: "Alex Brush";
+}
+
+.imagebox2{
+    display: inline-flex;
+    align-items: center;
+    width: 30%;
+    min-width: 20rem;
+    flex-grow: 1;
+}
+
+.imagebox{
+    width: 100%;
+    min-width: 20rem;
+    z-index: 4;
+    overflow: hidden;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.pubsign{
+    max-width: 95%;
+    height: auto; 
+    border: 1rem solid black;
+    margin: 0 2rem 2rem 2rem;
+    position: relative;
+    right: 1.5rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.pubinfo{
+    font-family: "Kalam";
+}
+
+/* .menus{
+    margin-top: 2rem;
+    display: inline-flex;
+} */
+
+.menu{
+    /* width:50%;
+    min-width: 20rem; */
+    font-family: "Kalam";
+    width: 20rem;
+    margin: 0 2rem 1rem 1rem;
+    background-color:rgb(205, 171, 100);
+    color: rgb(20, 55, 11);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    border: 0.5rem ridge rgb(136, 114, 65);
+    flex-grow: 1;
+    max-width: 30rem;
+    max-height: 26rem;
+}
+
+.scroll{
+    max-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+/* .food:hover{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    !important z-index: 8;
+} */
+
+.fooditems{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fooditems p{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.05rem dotted rgb(20, 55, 11);
+}
+
+.fooditems p span{
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0.2rem;
+}
+
+.overlaychalet{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 201, 206, 0.7);
+    position: absolute;
+}
+
+.overlaysol{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+}
+
+.openingsoonbox{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.openingsoon{
+    width: 80%;
+} 
+
+.chaletmain{
+    min-height: 6rem;
+    height: 6rem;
+    border-top: 1rem solid white;
+    border-bottom: 1rem solid white;
+    transition: all 400ms ease-out 200ms;
+}
+
+.chaletmain:hover{
+    min-height: 33rem;
+}
+
+.solbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.solmain h3 span{
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid white;
+    border-radius: 3rem;
+    width: 20rem;
+    font-size: 2.5rem;
+    transition: all 2s ease-out 100ms;
+}
+
+.solmain h3 span:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    border: 8px solid black;
+    border-radius: 0.5rem;
+    font-size: 4rem;
+    width: 80%;
+    padding: 0;
+}
+
+.solintro{
+    background-color:rgba(255, 255, 255, 0.8);
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0 5rem;
+}
+
+.drinkbox{
+    height: 30rem;
+    width: 30rem;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: -26rem;
+    transition: all 400ms ease-out 100ms;
+}
+
+.drinkbox:hover{
+    left: -2rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 3px solid gray;
+    border-radius: 1rem;
+}
+
+.drinkbox2{
+    height: 30rem;
+    width: 30rem;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    right: -26rem;
+    top: 22rem;
+    transition: all 400ms ease-out 100ms;
+}
+
+.drinkbox2:hover{
+    right: -2rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 3px solid gray;
+    border-radius: 1rem;
+}
+
+.drinkbox img,
+.drinkbox2 img{
+    height: 15rem;
+    width: 15rem;
+}
+
+.drinkbox h6,
+.drinkbox2 h6{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.drinkbox span,
+.drinkbox2 span{
+    font-size: 1.7rem;
+}
+
+.drinkbox p,
+.drinkbox2 p{
+    font-size: 2rem;
+}
+
+.drinkname{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 10rem;
+}
